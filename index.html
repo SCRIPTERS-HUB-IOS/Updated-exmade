@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExmadeHub</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="theme-purple">
+  <div class="navbar">
+    <img src="assets/pfp.png" alt="PFP" class="profile-img" />
+    <div class="theme-toggle">
+      <button onclick="setTheme('purple')">🟣</button>
+      <button onclick="setTheme('dark')">⚫</button>
+      <button onclick="setTheme('light')">⚪</button>
+    </div>
+  </div>
+
+  <div class="container" id="main-menu">
+    <h1>ExmadeHub</h1>
+    <button onclick="navigateTo('methods')">Methods</button>
+    <button onclick="window.open('https://discord.gg/WA2bUWCZJD')">Discord</button>
+  </div>
+
+  <div class="container hidden" id="methods-menu">
+    <button class="back-btn" onclick="navigateTo('main')">← Back</button>
+    <h2>Methods</h2>
+    <button onclick="window.open('https://logged.tg/tools/refresher')">Cookie Refresher</button>
+    <button onclick="window.open('https://www.logged.tg/auth/exmade')">Beam No.1</button>
+    <button onclick="window.open('https://immortal.st/dashboard')">Beam No.2 (Best)</button>
+    <button onclick="window.open('https://dsprs.vercel.app/hyperlink')">Hyperlink Generator</button>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
